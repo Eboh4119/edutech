@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: rgb(250, 188, 31);
+    border-radius: 20px;
+}
+.total-body{
+    height: 150vh;
+    max-width: 1150px;
+    background: radial-gradient(circle,rgb(21, 11, 46)0%, rgb(6, 6, 22)20%);
+    margin: 20px auto;
+    border-radius: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.644);
+}
+
+span{
+    color:  rgb(250, 188, 31);
+}
+li{
+    padding-top: 12px;
+    color: rgba(255, 255, 255, 0.795);
+    cursor: pointer;
+}
+li:hover{
+    border-bottom: 2px solid rgb(250, 188, 31);
+}
+.navButton{
+    display: none;
+}
+.sign{
+    transition: 1s ease-in-out;
+}
+.sign:hover{
+    background: linear-gradient(to right, rgb(23, 243, 23),yellow);
+}
+p{
+    color: rgba(255, 255, 255, 0.651);
+}
+.offline{
+    background:  rgb(2, 187, 94);
+}
+.lorem li{ 
+    border: none;
+    color: black;
+
+    padding-left: 10px;
+}
+.skew{
+    box-shadow: 3px 3px 3px 3px rgb(6, 6, 22) ;
+}
+@media  screen and (max-width: 730px) {
+    .total-body{
+        height: 330vh;
+    }
+    .unordered{
+        display: none;
+    }
+    .sign{
+        display: none;
+    }
+    .up:hover{
+        background: linear-gradient(to right, rgb(23, 243, 23),yellow);
+    }
+    .logo{padding-left: 0;
+        font-size: 20px;
+    }
+    .navButton{
+        display: contents;
+    }
+    .list{
+        padding-right: 5px;
+    }
+    .picone{
+        position: relative;
+    }
+    .pictwo{
+        position: relative;
+        margin-left: 130px;
+        width: 594px;
+        padding-top: 10px;
+    }
+    .boy{
+        display: none;
+    }
+}
+@media screen and (max-width: 360px) {
+    .pictwo{
+        margin-left: 100px;
+        padding-left: 25px;
+    }
+    .picone{
+        padding-right: 30px;
+    }
+    .course:hover{
+        background: linear-gradient(to right, rgb(23, 243, 23),yellow);
+        transition: 1s ease-in-out;
+    }
+    .offline{
+        box-shadow: 5px 5px 5px 5px rgb(6, 6, 22);
+    }
+    .online{
+        box-shadow: 5px 5px 5px 5px rgb(6, 6, 22);
+    }
+    .total-body{
+        height: 100%;
+    }
+    body{
+        max-width: 100%;
+    }
+}
